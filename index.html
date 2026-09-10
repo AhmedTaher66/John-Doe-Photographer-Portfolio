@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>John Doe | Photographer</title>
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="./Vendor/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./CSS/style.css">
+  </head>
+  <body>
+    <!--                                                               SIDEBAR -->
+    <nav class="sidebar d-none d-md-flex flex-column text-center">
+      <img src="images/nav-img.jpg" alt="John Doe" class="sidebar-image" />
+
+      <a href="#home" class="sidebar-link active">
+        <i class="fa-solid fa-house"></i>
+        <span>HOME</span>
+      </a>
+
+      <a href="#about" class="sidebar-link">
+        <i class="fa-solid fa-user"></i>
+        <span>ABOUT</span>
+      </a>
+
+      <a href="#photos" class="sidebar-link">
+        <i class="fa-solid fa-eye"></i>
+        <span>PHOTOS</span>
+      </a>
+
+      <a href="#contact" class="sidebar-link">
+        <i class="fa-solid fa-envelope"></i>
+        <span>CONTACT</span>
+      </a>
+    </nav>
+
+    <!--                                                               MOBILE NAV -->
+    <nav class="navbar navbar-dark bg-black fixed-top d-md-none mobile-navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#home"> John Doe </a>
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mobileMenu">
+          <ul class="navbar-nav text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">HOME</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">ABOUT</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#photos">PHOTOS</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">CONTACT</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+      <!--                                                               HERO -->
+      <header id="home" class="hero-section text-center">
+        <div class="container">
+          <h1 class="display-1 fw-bold">
+            <span class="d-none d-sm-inline">I'm </span>
+            John Doe
+          </h1>
+          <p class="lead">Photographer and Web Designer</p>
+          <img src="images/hero-img.jpg" alt="John Doe, photographer" class="img-fluid hero-image"/>
+        </div>
+      </header>
+
+      <!--                                                               ABOUT -->
+      <section id="about" class="section-padding">
+        <div class="container">
+          <h2 class="section-title">My Name</h2>
+          <hr class="section-line" />
+          <p class="text-secondary">
+            Some text about me. Some text about me. I am lorem ipsum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+          <p class="text-secondary">
+            Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit.
+          </p>
+
+          <!-- Skills -->
+          <h3 class="sub-title">My Skills</h3>
+          <div class="skill-box">
+            <p>Photography</p>
+            <div class="progress skill-progress">
+              <div class="progress-bar" style="width: 95%">95%</div>
+            </div>
+          </div>
+          <div class="skill-box">
+            <p>Web Design</p>
+            <div class="progress skill-progress">
+              <div class="progress-bar" style="width: 85%">85%</div>
+            </div>
+          </div>
+          <div class="skill-box">
+            <p>Photoshop</p>
+            <div class="progress skill-progress">
+              <div class="progress-bar" style="width: 80%">80%</div>
+            </div>
+          </div>
+
+          <!-- Statistics -->
+          <div class="stats-section">
+            <div class="row text-center">
+              <div class="col-6 col-md-3 stat-item">
+                <strong>11+</strong>
+                <p>Partners</p>
+              </div>
+              <div class="col-6 col-md-3 stat-item">
+                <strong>55+</strong>
+                <p>Projects Done</p>
+              </div>
+              <div class="col-6 col-md-3 stat-item">
+                <strong>89+</strong>
+                <p>Happy Clients</p>
+              </div>
+              <div class="col-6 col-md-3 stat-item">
+                <strong>150+</strong>
+                <p>Meetings</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Resume -->
+          <a href="#" class="btn btn-light resume-btn">
+            <i class="fa-solid fa-download"></i>
+            Download Resume
+          </a>
+
+          <!-- Pricing -->
+          <h3 class="sub-title">My Price</h3>
+
+          <div class="row g-4">
+            <!-- Basic -->
+            <div class="col-12 col-md-6">
+              <div class="pricing-card">
+                <div class="pricing-header">Basic</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Web Design</li>
+                  <li class="list-group-item">Photography</li>
+                  <li class="list-group-item">5GB Storage</li>
+                  <li class="list-group-item">Mail Support</li>
+                  <li class="list-group-item price">
+                    <h2>$ 10</h2>
+                    <span>per month</span>
+                  </li>
+                  <li class="list-group-item signup">
+                    <button class="btn btn-light">Sign Up</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Pro -->
+            <div class="col-12 col-md-6">
+              <div class="pricing-card">
+                <div class="pricing-header">Pro</div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Web Design</li>
+                  <li class="list-group-item">Photography</li>
+                  <li class="list-group-item">50GB Storage</li>
+                  <li class="list-group-item">Endless Support</li>
+                  <li class="list-group-item price">
+                    <h2>$ 25</h2>
+                    <span>per month</span>
+                  </li>
+                  <li class="list-group-item signup">
+                    <button class="btn btn-light">Sign Up</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonials -->
+          <h3 class="sub-title">My Reputation</h3>
+          <div class="testimonial">
+            <img src="images/about-1.jpg" alt="Chris Fox"  loading="lazy"/>
+            <div>
+              <p>
+                <strong>Chris Fox.</strong>
+                CEO at Mighty Schools.
+              </p>
+              <p>John Doe saved us from a web disaster.</p>
+            </div>
+          </div>
+
+          <div class="testimonial">
+            <img src="images/about-2.jpg" alt="Rebecca Flex"  loading="lazy"/>
+            <div>
+              <p>
+                <strong>Rebecca Flex.</strong>
+                CEO at Company.
+              </p>
+              <p>No one is better than John Doe.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--                                                               PORTFOLIO -->
+      <section id="photos" class="section-padding">
+        <div class="container">
+          <h2 class="section-title">My Photos</h2>
+          <hr class="section-line" />
+          <div class="row g-4">
+
+            <!-- Left Column -->
+            <div class="col-12 col-md-6">
+              <img src="images/port-1.jpg" alt="Wedding photography" class="portfolio-image" loading="lazy"/>
+              <img src="images/port-2.jpg" alt="Rock landscape photography" class="portfolio-image" loading="lazy"/>
+              <img src="images/port-3.jpg" alt="Sailboat photography" class="portfolio-image" loading="lazy"/>
+            </div>
+
+            <!-- Right Column -->
+            <div class="col-12 col-md-6">
+              <img src="images/port-4.jpg" alt="Underwater photography" class="portfolio-image" loading="lazy"/>
+              <img src="images/port-5.jpg" alt="Chef photography" class="portfolio-image" loading="lazy"/>
+              <img src="images/port-1.jpg" alt="Wedding photography" class="portfolio-image" loading="lazy"/>
+              <img src="images/port-6.jpg" alt="Photography" class="portfolio-image" loading="lazy"/>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--                                                               CONTACT -->
+      <section id="contact" class="section-padding">
+        <div class="container">
+          <h2 class="section-title">Contact Me</h2>
+          <hr class="section-line" />
+
+          <!-- Info -->
+          <div class="contact-info">
+            <p>
+              <i class="fa-solid fa-location-dot"></i>
+              Chicago, US
+            </p>
+            <p>
+              <i class="fa-solid fa-phone"></i>
+              Phone: +00 151515
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope"></i>
+              Email: mail@mail.com
+            </p>
+          </div>
+          <p>Let's get in touch. Send me a message:</p>
+
+          <!-- Form -->
+          <form action="#" method="post" class="contact-form">
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Name" id="name" name="name" required/>
+            </div>
+
+            <div class="mb-3">
+              <input type="email" class="form-control" placeholder="Email" id="email" name="email" required/>
+            </div>
+
+            <div class="mb-3">
+              <input type="text" class="form-control" placeholder="Subject" id="subject" name="subject" required/>
+            </div>
+
+            <div class="mb-3">
+              <textarea class="form-control" rows="5" placeholder="Message" id="message" name="message" required></textarea>
+            </div>
+
+            <div class="send">
+              <button type="submit" class="btn btn-light send-btn">
+                <i class="fa-solid fa-paper-plane"></i>
+                SEND MESSAGE
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!--                                                               FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/ahmed.taher.737986/" target="_blank" aria-label="Facebook" rel="noopener noreferrer">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a href="https://www.pinterest.com/" target="_blank" aria-label="Pinterest" rel="noopener noreferrer">
+              <i class="fa-brands fa-pinterest"></i>
+            </a>
+            <a href="https://wa.me/201556145996" target="_blank" aria-label="Whatsapp" rel="noopener noreferrer">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ahmed-taher-essa-715a90414/" target="_blank" aria-label="Linkedin" rel="noopener noreferrer">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <p>
+            © 2026 Ahmed Taher. All Rights Reserved
+          </p>
+        </div>
+      </footer>
+    </main>
+    <script src="./Vendor/js/bootstrap.bundle.min.js" defer></script>
+  </body>
+</html>
