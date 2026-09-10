@@ -17,6 +17,6 @@ The website is designed to work across:
 * Desktop screens
 * Large desktop displays
 
-## 👨‍💻 Author
+## Author
 Ahmed Taher
 John Doe Photographer — 2026
